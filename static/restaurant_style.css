@@ -1,0 +1,116 @@
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('/static/restaurant_finder.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.previous {
+    background-color: #28a745; /* Green for Previous */
+}
+
+.previous:hover {
+    background-color: #218838;
+}
+
+.next {
+    background-color: #dc3545; /* Red for Next */
+}
+
+.next:hover {
+    background-color: #c82333;
+}
+
+.page-info {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    font-weight: bold;
+}

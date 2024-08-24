@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('/static/restaurant_finder.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styling for the "View All Restaurants" link */
+.view-all {
+    color: #007bff; /* Change to your desired color */
+    font-weight: bold;
+    border: 2px solid #007bff; /* Add border if desired */
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #fff; /* Background color */
+}
+
+.view-all:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff; /* Border color on hover */
+}
