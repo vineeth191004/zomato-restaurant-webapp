@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='restaurant_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant List</h1>
+        <ul>
+            {% for restaurant in restaurants %}
+                <li>
+                    <a href="{{ url_for('get_restaurant', restaurant_id=restaurant['Restaurant ID']) }}">
+                        {{ restaurant['Restaurant Name'] }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="pagination">
+            {% if page > 1 %}
+                <a href="{{ url_for('get_restaurants', page=page-1, per_page=per_page, restaurant_id=restaurant_id, country=country, avg_cost_min=avg_cost_min, avg_cost_max=avg_cost_max, cuisines=cuisines, search=search) }}" class="pagination-button previous">Previous</a>
+            {% endif %}
+            <span class="page-info">Page {{ page }}</span>
+            <a href="{{ url_for('get_restaurants', page=page+1, per_page=per_page, restaurant_id=restaurant_id, country=country, avg_cost_min=avg_cost_min, avg_cost_max=avg_cost_max, cuisines=cuisines, search=search) }}" class="pagination-button next">Next</a>
+        </div>
+        <a href="/" class="back-link">Back to search</a>
+    </div>
+</body>
+</html>

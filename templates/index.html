@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Search Portal</h1>
+    </header>
+    <main>
+        <form method="get" action="{{ url_for('get_restaurants') }}">
+            <label for="restaurant_id">Filter by Restaurant ID:</label>
+            <input type="number" id="restaurant_id" name="restaurant_id" placeholder="Restaurant ID">
+            
+            <label for="search">Search by Name or Description:</label>
+            <input type="text" id="search" name="search" placeholder="Search...">
+            
+            <label for="country">Filter by Country:</label>
+            <input type="text" id="country" name="country" placeholder="Country Code">
+
+            <label for="avg_cost_min">Filter by Minimum Average Cost for Two:</label>
+            <input type="number" id="avg_cost_min" name="avg_cost_min" step="0.01" placeholder="Min Cost">
+
+            <label for="avg_cost_max">Filter by Maximum Average Cost for Two:</label>
+            <input type="number" id="avg_cost_max" name="avg_cost_max" step="0.01" placeholder="Max Cost">
+
+            <label for="cuisines">Filter by Cuisines:</label>
+            <input type="text" id="cuisines" name="cuisines" placeholder="Cuisines">
+
+            <button type="submit">Search</button>
+        </form>
+        <a href="{{ url_for('get_restaurants') }}" class="view-all">View All Restaurants</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='restaurant_detail.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Details</h1>
+        <ul>
+            <li>ID: {{ restaurant['Restaurant ID'] }}</li>
+            <li>Name: {{ restaurant['Restaurant Name'] }}</li>
+            <li>Country Code: {{ restaurant['Country Code'] }}</li>
+            <li>Country: {{ restaurant['Country'] }}</li>
+            <li>City: {{ restaurant['City'] }}</li>
+            <li>Address: {{ restaurant['Address'] }}</li>
+            <li>Locality: {{ restaurant['Locality'] }}</li>
+            <li>Longitude: {{ restaurant['Longitude'] }}</li>
+            <li>Latitude: {{ restaurant['Latitude'] }}</li>
+            <li>Cuisines: {{ restaurant['Cuisines'] }}</li>
+            <li>Average Cost for two: {{ restaurant['Average Cost for two'] }}</li>
+            <li>Currency: {{ restaurant['Currency'] }}</li>
+            <li>Has Table booking: {{ restaurant['Has Table booking'] }}</li>
+            <li>Has Online delivery: {{ restaurant['Has Online delivery'] }}</li>
+            <li>Is delivering now: {{ restaurant['Is delivering now'] }}</li>
+            <li>Switch to order menu: {{ restaurant['Switch to order menu'] }}</li>
+            <li>Price range: {{ restaurant['Price range'] }}</li>
+            <li>Aggregate rating: {{ restaurant['Aggregate rating'] }}</li>
+            <li>Rating color: {{ restaurant['Rating color'] }}</li>
+            <li>Rating text: {{ restaurant['Rating text'] }}</li>
+            <li>Votes: {{ restaurant['Votes'] }}</li>
+        </ul>
+        <a href="/">Back to search</a>
+        <a href="/restaurants">Back to restaurant list</a>
+    </div>
+</body>
+</html>
