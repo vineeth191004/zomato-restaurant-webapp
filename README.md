@@ -62,13 +62,10 @@ The project follows a basic MVC (Model-View-Controller) architecture:
 
 ## Running the Application
 
-1. Start the Flask application:
-
-   ```bash
-   flask run
-   ```
-
-2. Access the application in your web browser at `http://localhost:5000`.
+1. Firstly run the **data.py** so that the 2 dataframes i.e zomato.csv and Country code.xlsx will be merged as the Country Code is common in both the dataframes.
+2. Secondly run the **sql.py** so that sqllite3 stored database is converted to MySQL Workbench database. (I done for my convenience)
+3. Then run the **app.py** for the web application to handle the routes and rendering the templates.
+4. Access the application in your web browser at `http://localhost:5000`.
 
 ## REST APIs
 
