@@ -46,18 +46,13 @@ The project follows a basic MVC (Model-View-Controller) architecture:
    cd zomato-restaurant-webapp
    ```
 
-2. Create a virtual environment and activate it:
+2. Install the required packages as per the code.
+   **pandas**
+   **sqlite3**
+   **Flask**
+   **mysql-connector-python**
+   **flask-cors**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Database Setup
 
