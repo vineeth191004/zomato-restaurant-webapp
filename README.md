@@ -42,7 +42,7 @@ The project follows a basic MVC (Model-View-Controller) architecture:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/zomato-restaurant-webapp.git
+   git clone https://github.com/vineeth191004/zomato-restaurant-webapp.git
    cd zomato-restaurant-webapp
    ```
 
